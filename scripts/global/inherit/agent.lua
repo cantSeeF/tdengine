@@ -322,6 +322,7 @@ end
 -- 给逻辑服发送消息，网关服调用
 function AGENT_TDCLS:send_logic_message(msg, ...)
     local logic_port = get_map_port(self.port_no)
+    trace("logic server is %o", logic_port)
     if logic_port == -1 then
         trace("no logic server for %o", self.port_no)
         return

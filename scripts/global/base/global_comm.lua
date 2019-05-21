@@ -110,6 +110,8 @@ function cmd_new_connection(cookie, fd, client_ip, server_port, websocket)
     agent:set_client_ip(client_ip)
     agent:set_websocket(websocket)
     local server_type = get_server_type(client_ip, server_port)
+    --in fact, server_type would be SERVER_TYPE_CLIENT when connection come from client and SERVER_TYPE is "gate"
+    trace("server_port is %o. agent type gonna be %o",server_port,server_type)
     if server_type == SERVER_TYPE_GATE or server_type == SERVER_TYPE_LOGIC then
         -- 现在暂时不需要验证
         agent:set_authed(true)

@@ -36,6 +36,7 @@ local function main()
     -- load_folder("client/daemons", ""); --,"propertyd" 强制加载优先顺序
 
     -- STRESS_TEST_D.start(500, "CHAT_TESTD")
+    STRESS_TEST_D.start(1, "CHAT_TESTD")
 
     load_folder("client/msgs")
 

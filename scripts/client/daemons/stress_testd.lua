@@ -5,6 +5,7 @@
 --[[ 压力测试模块 使用说明：
 -- 接口：start
 -- 例子：STRESS_TEST_D.start(50, "CHAT,ADD_ITEM")表示新登陆50个玩家，并开始"CHAT","ADD_ITEM"子模块的压力测试
+--STRESS_TEST_D.start(1, "CHAT")
 -- 接口：stop
 -- 例子：STRESS_TEST_D.stop("CHAT,ADD_ITEM")表示停止所有在线玩家的"CHAT","ADD_ITEM"子模块的压力测试
 --]]
